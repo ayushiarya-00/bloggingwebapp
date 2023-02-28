@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@media screen and (min-width: 600px) {
+  .page-style > .brief-card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hide-element {
+    display: none !important;
+  }
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.App {
+  position: absolute;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.basic-layout {
+  position: absolute;
+  min-width: fit-content;
+  min-height: fit-content;
+  width: 100vw;
+  height: 100vh;
+}
+
+.card-light {
+  background-color: var(--light);
+  box-shadow: 0 0 7px 0px #a8a8a8;
+}
+.card-dark {
+  background-color: var(--bs-dark);
+  box-shadow: none;
+}
+
+.dropdown-btn {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+.hide-element {
+  display: block;
+}
+
+.hover-card-effect {
+  transition: 0.2s ease-in;
+}
+
+.hover-card-effect:hover {
+  transform: scale(1.03);
+}
+
+.icon-button-light {
+  color: var(--light);
+}
+.icon-button-dark {
+  color: var(--dark);
+}
+
+.icon-button-light:hover {
+  color: var(--primary);
+}
+.icon-button-dark:hover {
+  color: var(--primary);
+}
+
+.navbar-brand {
+  font-size: x-large;
+}
+
+.page-style {
+  min-height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  margin-top: 64px;
+}
+
+.toast-container {
+  position: fixed !important;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--primary);
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --link-color: #638ecd;
+  --light-bg: #f5f5f5;
+  --dark-bg: rgb(10, 10, 10);
+}
